@@ -1,0 +1,253 @@
+﻿<!DOCTYPE HTML>
+
+<html>
+	<head>
+	<script type="text/javascript">
+		<!--
+		if (screen.width <= 699) {
+		document.location = "mobile.html";
+		}
+		//-->
+		</script>
+<!--notifikacioni -->
+		<link rel="stylesheet" type="text/css" href="css/normalizenotify.css" />
+		<link rel="stylesheet" href="fonts/font-awesome-4.2.0/css/font-awesome.min.css">
+		<link rel="stylesheet" type="text/css" href="css/tooltip-bloated.css" />
+
+		<title>2musketeers radio</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=false;">
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
+		<link href='http://fonts.googleapis.com/css?family=Roboto:500' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="css/flexslider.css" />
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+		<script src="js/jquery.flexslider.js"></script>	
+		<script type="text/javascript" >
+			$(window).load(function() {
+			$('.flexslider').flexslider();
+			});	
+		</script>	
+		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
+		<link href="css/normalize.css" type="text/css" rel="stylesheet"></link>
+		<link href="css/demo.css" type="text/css" rel="stylesheet"></link>
+		<link href="css/icons.css" type="text/css" rel="stylesheet"></link>
+		<link href="css/style1.css" type="text/css" rel="stylesheet"></link>
+		<script src="js/modernizr.custom.js"></script>
+
+		<script type="text/javascript"> 
+		var scrollY = 0;
+			var distance = 40;
+			var speed = 1;
+			function autoScrollTo(el) {
+			var currentY = window.pageYOffset;
+			var targetY = document.getElementById(el).offsetTop;
+			var bodyHeight = document.body.offsetHeight;
+			var yPos = currentY + window.innerHeight;
+			var animator = setTimeout('autoScrollTo(\''+el+'\')',10);
+			if(yPos > bodyHeight){
+			clearTimeout(animator);
+			} else {
+			if(currentY < targetY-distance){
+			   scrollY = currentY+distance;
+			   window.scroll(0, scrollY);
+			   } else {
+			   clearTimeout(animator);
+			   }
+			}
+			}
+			function resetScroller(el){
+			var currentY = window.pageYOffset;
+   			var targetY = document.getElementById(el).offsetTop;
+			var animator = setTimeout('resetScroller(\''+el+'\')',speed);
+			if(currentY > targetY){
+			scrollY = currentY-distance;
+			window.scroll(0, scrollY);
+			} else {
+			clearTimeout(animator);
+			}
+			}
+		</script>
+	</head>
+	<body style="
+	    margin: 0px auto;
+	    min-width: 100%;
+	    "> 
+	    
+<div id="wrapper">
+	<div id="container">
+    	<div id="containerholder">
+<!-- /facebook koment-->
+				<div id="fb-root"></div>
+				<script>(function(d, s, id) {
+				  var js, fjs = d.getElementsByTagName(s)[0];
+				  if (d.getElementById(id)) return;
+				  js = d.createElement(s); js.id = id;
+				  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.0";
+				  fjs.parentNode.insertBefore(js, fjs);
+				}(document, 'script', 'facebook-jssdk'));</script>
+
+<!-- /facebook share -->
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.0";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<!-- /fillimi -->
+		
+
+<!-- navigacioni-->
+
+
+		<nav id="bt-menu" class="bt-menu bt-menu-close" >
+		        <a class="bt-menu-trigger tooltip"> <span class="tooltip-content">You can easily navigate the city by car.</span>>
+
+		            Menu
+
+		        </a>
+		        <ul>
+            <li>
+                <a class="bt-icon icon-home" href="#" onclick="return false;" onmousedown="resetScroller('banner');">
+
+                    Search
+
+                </a>
+            </li>
+            <li>
+                <a class="bt-icon icon-folder-add" href="cassette.html">
+
+                    Profile
+
+                </a>
+            </li>
+            <li>
+                <a class="bt-icon icon-window-delete" href="form/contact.php">
+
+                    Download
+
+                </a>
+            </li>
+        </ul>
+        <div class="bt-overlay"></div>
+    </nav>
+<!-- /container -->
+
+<script src="js/classie.js"></script>
+<script src="js/borderMenu.js"></script>
+
+		<div class="header" id="background">
+			<div id="headercontainer">
+				<div class="logo" id="logoja"></div>	
+					<div class="vendi" id="headeri">
+						<a href="#" onclick="return false;" onmousedown="resetScroller('banner');"><img src="css/images/home.png"></a>
+						<a href="#" onclick="return false;" onmousedown="autoScrollTo('about');"><img src="css/images/rethnesh.png"></a>
+						<a href="#" onclick="return false;" onmousedown="autoScrollTo('radiocontainer');"><img src="css/images/radiojon.png"></a>
+						<a href="#" onclick="return false;" onmousedown="autoScrollTo('social');"><img src="css/images/sociali.png"></a>			
+					</div>
+			</div>
+		</div>
+
+			<div id="banner">
+				<div class="slideri" id="banneri">
+					<div class="flexslider" >
+
+					  <ul class="slides">
+					    <li>
+					      <img src="css/images/banner1.png" />
+					    </li>
+					    <li>
+					      <img src="css/images/benson.png" />
+					    </li>
+					    <li>
+					      <img src="css/images/poster28nentor.png" />
+					    </li>
+					    
+					    <!-- items mirrored twice, total of 12 -->
+					  </ul>
+					</div>
+				</div>
+			</div>			
+		
+		<div id="about">
+		  <div id="aboutcontainer">
+			<div class="box1"id="aboutcontainer">
+				<div class="rrethnesh" id="img"></div>
+				<div class="parg1" id="parg"></div>
+			</div>
+			<div id="box2">
+				<div class="aboutus" id="img"></div>
+				<div class="parg2" id="parg"></div>
+			</div>					
+		</div>
+		</div>
+		<div id="radio">
+			<div id="radiocontainer">
+
+        <div class="radiojone" id="img"></div>
+        <div id="radioholder">
+        <div class="radiobox">
+		<script type="text/javascript">var cstruid = 258273;var cstrdark = "TRUE";</script>
+		<script type="text/javascript" src="http://cdn.caster.fm/0070B7/widgets/status.js"></script>
+        <!--   DO NOT REMOVE THE LINKS BELOW, THEY  WILL BE HIDDEN (AND WILL HELP US A LOT)   -->
+        <a id="cstrlb" href="http://www.caster.fm/">Free Shoutcast Hosting</a>
+        <a id="cstrlb2" href="http://www.caster.fm/">Radio Stream Hosting</a>
+        <div id="cstrdiv"></div>
+        </div>
+        <div class="radiostream">
+		<script type="text/javascript">var cstrpuid = 258273;var cstrpwidth = "500";var cstrpheight = "325";</script>
+		<script type="text/javascript" src="http://cdn.caster.fm/0070B7/widgets/player_noads.js"></script>
+        <!--   DO NOT REMOVE THE LINKS BELOW, THEY  WILL BE HIDDEN (AND WILL HELP US A LOT)   -->
+        <a id="cstrplb" href="http://www.caster.fm/">Free Shoutcast Hosting</a>
+        <a id="cstrplb2" href="http://www.caster.fm/">Radio Stream Hosting</a>
+        <div id="cstrpdiv"></div>
+        </div>
+        </div>
+        </div>
+        </div>
+
+
+		<div id="social">
+		<div id="socialcontainer">
+            <div id="socialholder">
+			<div class="social" id="img"></div>
+               
+			<div class="twitteri">
+				<div class="twitter" id="img"></div>
+				  <a class="twitter-timeline" data-dnt="true" href="https://twitter.com/hashtag/2musketera" data-widget-id="527993962129141761">#2musketera Tweets</a>
+          					<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.			                  createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+          			
+					</div>
+                </div>
+		    </div>
+			</div>	
+			
+			<div id="footer">
+			<div id="footercontainer">
+				<div class="footertekst"></div>
+					<div class="foterline"></div>
+						<div class="dev"></div>
+							<div class="Copyright"></div>
+			</div>
+			</div>
+			<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-56720495-2', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</div>
+</div>
+</div>			
+	</body>
+	</html>
